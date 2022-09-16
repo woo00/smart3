@@ -1,0 +1,91 @@
+/*�뵒�뒪�뵆�젅�씠 愿��젴*/
+.inblock {
+	display: inline-block;
+}
+.mxw600 {
+	max-width: 600px;
+}
+.mxw650 {
+	max-width: 650px;
+}
+.mxw700 {
+	max-width: 700px;
+}
+.mxw750 {
+	max-width: 750px;
+}
+.box50 {
+	width:50px;
+	height: 50px;
+}
+/* 留덉쭊 愿��젴*/
+.mgr15 {
+	margin-right: 15px;
+}
+.mgb20 {
+	margin-bottom: 20px;
+}
+.mgb15 {
+	margin-bottom: 15px;
+}
+.glbl {
+	margin-left: 10px;
+}
+/* �뙣�뵫 愿��젴*/
+.pdh30 {
+	padding: 30px 0 30px;
+}
+.pdl10 {
+	padding-left: 10px;
+}
+.pdr10 {
+	padding-right: 10px;
+}
+/* �삤踰꾪뵆濡쒖슦 */
+.hidden {
+	overflow: hidden;
+}
+/*�룿�듃 愿��젴*/
+.ft12 {
+	font-size: 12pt;
+}
+.ft16 {
+	font-size: 16pt;
+}
+.ft18 {
+	font-size: 18pt;
+}
+.bd {
+	font-weight: bold;
+}
+/* 踰꾪듉 �궗�씠利�*/
+.w80 {
+	width: 80px;
+}
+.w150 {
+	width: 150px;
+}
+
+/*�븘諛뷀� 愿��젴*/
+.avtimg {
+	width: 200px;
+	height: 200px;
+}
+.avtfr {
+	width:200px;
+	height:230px;}
+	
+.h9 {
+	height :9px;
+}
+.h30 {
+	height :29px;
+}
+
+/*배경색 관련*/
+.ivory {
+	background-color: #ebddcb;
+}
+.tan {
+	background-color: tan;
+}

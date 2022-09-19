@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div style="text-align: center;">
+		<h1 style="padding: 15px; background-color: tan; color: white; width: 700px;"><span id="nameTag"></span><small>님의 페이지입니다.</small></h1>
+		
+	</div>
+<script type="text/javascript">
+ // 이름을 입력받아 태그에 채워서 문서를 완성해보자.
+var name = prompt('이름을 입력하세요!');
+ 
+ // 태그 선택하고\
+ var el = document.getElementById('nameTag');
+ el.innerHTML = name;
+</script>
+</body>
+</html>

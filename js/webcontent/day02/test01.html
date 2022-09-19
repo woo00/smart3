@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+<script type="text/javascript">
+/* 
+ 	document.write() : 문서를 작성하는 기능의 함수
+ 						따라서 태그도 만들 수 있다.
+ 			 
+ */
+ 	var sno = prompt('만들갯수 : ');
+ 	
+ 	var cnt = parseInt(sno); // parseInt정수형태의 문자열을 정수로 변환해주는 함수
+ 							// '123' ==> 123
+ 	for(i = 0; i < cnt ; i++){
+ 			document.write('<h1 class="inblock glbl w300 w3-center w3-padding w3-lime w3-card">추가된 태그</h1>');
+ 	}
+</script>
+</head>
+<body>
+<!-- 자바스크립트를 문서에 포함시키는 방법 -->
+
+<!-- 	1.외부 스크립트 -->
+<!-- 	2.스크립트태그에서 추가 -->
+<!-- 	3. inline: 태그에서 추가하는방법 (ex] onclick="alert('abcd)" 
+
+자바스크립트의 실행결과를 확인하는 방법
+
+	1.console.log()
+	2.alert()
+	3.document.write()
+	
+
+-->
+
+
+<div class="w3-content mxw700">
+	<h1 class="tan w3-center w3-padding w3-card-4">스크립트 실행결과 확인</h1>
+</div>
+<script type="text/javascript">
+ 	document.write('<h1 class="inblock w300 w3-center ivory w3-padding w3-card">추가된 태그</h1>');
+</script>
+</body>
+</html>

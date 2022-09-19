@@ -65,6 +65,9 @@
 .w150 {
 	width: 150px;
 }
+.w300 {
+	width: 300px;
+}
 
 /*�븘諛뷀� 愿��젴*/
 .avtimg {
@@ -83,6 +86,9 @@
 }
 
 /*배경색 관련*/
+.bw {
+	background-color: burlywood;
+}
 .ivory {
 	background-color: #ebddcb;
 }

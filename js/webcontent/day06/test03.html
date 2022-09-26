@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+
+<script type="text/javascript">
+	function getTitle(el){
+		var title = el.innerHTML;
+		alert(title);
+	}
+</script>
+</head>
+<body>
+	<div class="w3-content mxw700">
+		<h1 class =" w3-pink w3-padding w3-card-4 w3-center" id="title" onclick="getTitle(this)">이벤트 테스트</h1>
+		
+		<div>
+			<div class="w3-col">
+				<label for="id" class="w3-col m2">I D : </label>
+				<input type="text" name="id" id="id" class="w3-col m10 w3-input w3-border">
+			</div>
+			<h3 id="txt" class="w3-center">###</h3>
+			<select name="subj" id="subj">
+				<option value="">선택하세요.</option> <!-- select 태그는 전송을 하위의 option 태그의 value 속성값을 전송한다. -->
+				<option value="main">Java</option>
+				<option value="db">Oracle</option>
+				<option value="web">HTML</option>
+				<option value="js">JavaScript</option>
+			</select>
+		</div>
+	</div>
+<script type="text/javascript">
+// change event
+/*
+ 	이벤트 추가방법.
+ 		1.태그를 선택한다.
+ 		2.적용시킬 이벤트 이름을 기술하고(==> 자바스크립트에서는 html상태 앞에 on을 붙여 이벤트를 처리한다))
+ 		3.함수를 정의한다.
+ */
+// 	document.getElementById('id').onchange = function(){
+ 	document.getElementById('id').onchange = function(){
+// 	document.getElementById('id').onKeyUp = function(){
+// 	document.getElementById('id').onblur = function(){
+// 	document.getElementById('id').ondbclick = function(){
+// 	document.getElementById('id').onmouseover= function(){
+ 			// 데이터를 읽고
+ 			//읽은 데이터는 나중에 사용해야 하므로 변수에 기억시켜 놓는다.
+ 			var txt = document.getElementById('id').value; // 입력태그에 입력된 데이터를 읽을 때는 value 속성값을 읽으면 된다.
+ 			// txt태그에 데이터 쓰고
+ 			var tmp = document.getElementById('txt').innerHTML; // 아이디가 txt인 일반태그의 내용을 읽어서 tmp 변수에 기억시킨다.
+ 			alert(tmp);
+ 			
+ 			document.getElementById('txt').innerHTML = txt;
+ 			//일반태그에 데이터를 표현할때는 innerHTML, innerText, textContent 속성을 사용하면 된다.
+ 		};
+ 		
+ 		document.getElementById('subj').onchange = function(){
+ 			var sub = this.value;
+ 			alert(sub);
+ 		};
+</script>
+</body>
+</html>

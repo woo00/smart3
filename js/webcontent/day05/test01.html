@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+		index		0		1		2		3		4		5
+					-6		-5		-4		-3		-2		-1
+	*/
+	var kdata = ['서울', '부산', '대구', '인천', '대전', '세종'];
+	var city1 = kdata.slice(0,4);
+	document.write(city1 + '<br>')
+	
+	var city2 = kdata.slice(2,-1);
+	document.write(city2 + '<br>')
+	
+	var city3 = kdata.slice(-4,-2);
+	document.write(city3 + '<br>')
+	
+	document.write("kdata : " + kdata + '<br>');
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

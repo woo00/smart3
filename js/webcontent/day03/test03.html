@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var arr = new Array('YG'); // var arr =['YG']
+	
+	arr[0] = '제니';
+	arr[1] = '리사';
+	arr[2] = '로제';
+	arr[3] = '지수';
+	
+	for(i = 0 ; i < arr.length ; i++){
+		document.write(arr[i]+',');
+	}
+	
+	var no = 10;
+// 	alert('arr type : '+ typeof arr);
+//  alert('arr type : '+ Array.isArray(arr)?'배열' : '안배열');
+//  	alert('no type : ' + Array.isArray(no) ? '배열' : '안배열'));
+  alert('arr type : '+ (arr instanceof Array ?'배열' : '안배열'));
+</script>
+</head>
+<body>
+
+</body>
+</html>

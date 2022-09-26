@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array splice Function</title>
+
+<script type="text/javascript">
+	/*
+		배열자체를 잘라서 변경시켜준다.(떼오는거임)
+		배열.splice(시작인덱스, 잘라낼 갯수)
+	*/
+	
+	var kdata = ['서울', '부산', '대구', '인천', '대전', '세종'];
+	
+	var city1 = kdata.splice(3,2);
+	document.write('kdata : ' + kdata + '<br>');
+	document.write('city1 : ' + city1 + '<br>');
+	
+	var city2 = kdata.splice(1,1,'강릉','제주');
+	document.write('kdata : ' + kdata + '<br>');
+	document.write('city2 : ' + city2 + '<br>');
+	
+	var city3 = kdata.splice(2, Number.MAX_VALUE);
+	document.write('kdata : ' + kdata + '<br>');
+	document.write('city3 : ' + city3 + '<br>');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

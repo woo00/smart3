@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var city01 = ['서울','부산','대전'];
+	var city02 = ['대구','광주','인천'];
+	var city03 = ['전주','부여','세종'];
+	
+	var data01 = city01.concat('수원');
+	document.write('city01 : ' + city01 + '<br>');
+	var data01 = city01.concat('수원');
+	document.write('data01 : ' + data01 + '<br>');
+	data01 = data01.concat('부천','이천');
+	document.write('data01 : ' + data01 + '<br>');
+	
+	var data02 = city01.concat(city02);
+	document.write('data02 : ' + data02 + '<br>');
+	
+	var data03 = city01.concat(city02, city03);
+	document.write('data03 : ' + data03 + '<br>');
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

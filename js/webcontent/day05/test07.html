@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+	var ndata = [];
+	//두자리 숫자 랜덤하게 10개 생성
+	pyosi:
+	for(i = 0 ; i < 10 ; i++){
+		var no = Math.floor(Math.random()*90+10);
+		// 중복검사
+		for(j = 0 ; j < i ; j++){
+			if(ndata[j]  == no){
+				i--;
+				continue pyosi;
+			}
+		}
+		ndata[i] = no;
+		
+	}
+	var fdata = ndata.filter(function(value){
+		return value % 2 == 0;
+		/*
+			filter() : 매개변수로 입력되는 함수의 반환값이
+						true이면 그 데이터는 만들어질 배열에 포함
+						false이면 포함시키지 않음
+		*/
+	})
+	document.write('ndata : ' + ndata + '<br>');
+	document.write('fdata : ' + fdata + '<br>');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

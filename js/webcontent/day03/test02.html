@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var blackpink = [
+		['제니',27,'jennie@gitgrd.com'],
+		['리사',26,'lisa@githrd.com'],
+		['로제',28,'rose@githrd.com'],
+		['지수',27,'jisoo@githrd.com']
+	];
+	for (i=0; i < blackpink.length; i++){
+		for(j=0; j < blackpink[i].length; j++){
+			document.write(blackpink[i][j] + ', ');
+		}
+		document.write('<br>');
+	}
+	
+	//문제 ] 이름을 입력받아서 그 멤버의 정보를 출력하세요.
+	var name = prompt('멤버 이름을 입력하세요!');
+	
+// 	var idx = 0;
+	
+	for(i=0;i< blackpink.length;i++){
+		if(name==blackpink[i][0]){
+// 			idx=i;
+			
+			for(j=0;j<blackpink[i].length;i++){
+				document.write(blackpink[i][j]+',');	
+			}
+		}
+	}
+// 	for (i=0;i<blackpink[idx].length;i++){
+// 		document.write(blackpink[idx][i]+',');
+// 	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

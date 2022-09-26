@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+	var jeny = ['제니', 27, 'F']; // 이렇게 배열로 정의를 하면 데이터를 꺼낼 때 인덱스로 꺼내야함
+	
+	// 연관배열
+	/*
+		형식 ]
+		
+			var 변수이름 ={'키값1' : 데이터1, '키값2' : 데이터2 ......}
+		
+		이렇게 연관배열로 데이터를 기억하게되면 데이터를 구분하는 기값으로 데이터를 꺼내야함
+	*/
+	var jennie = {'name' : '제니', 'age' : 27, 'gen' : 'F' };
+	alert(jennie['name']); // name 추출
+	console.log(jennie['name']);
+	
+	// 배열에 데이터 추가하기
+	
+	//일반배열
+	jeny[3] = '휘파람';
+	
+	jennie['song'] = '휘파람';
+	
+	document.write('jeny : ' + jeny + '<br>');
+	document.write('jennie.song : ' + jennie.song + '<br>');
+	document.write('jennie["name"] : ' + jennie["name"] + '<br>');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

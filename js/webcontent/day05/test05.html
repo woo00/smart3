@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array map Method</title>
+
+<script type="text/javascript">
+	var noData = [];
+	for (i = 0 ; i < 10 ; i++){
+		noData[i] = i + 1;
+	}
+	
+	var mapData = noData.map(function(value){
+		return value * value;
+	});
+	
+	document.write('noData : ' + noData + '<br>');
+	document.write('mapData : ' + mapData + '<br>');
+	document.write('mapData type : ' + (Array.isArray(mapData) ? '배열' : '배열아님') + '<br>');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

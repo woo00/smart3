@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+	var car = new Object();
+	car.name = 'Hummer';
+	car.speed = 250;
+	car.color = 'blackpink';
+	car.speedup = function(){
+		return this.speed + 50;
+	};
+	
+</script>
+</head>
+<body>
+	
+<script type="text/javascript">
+	// body 태그에 태그들을 추가해보자.
+	// 태그이름으로 body태그를 선택해보자.
+	var el = document.getElementsByTagName('body');
+	el[0].innerHTML += '<p>car name : ' + car.name + '</p>';
+	el[0].innerHTML += '<p>car speed : ' + car.speed + '</p>';
+	el[0].innerHTML += '<p>car color : ' + car.color + '</p>';
+	
+</script>
+</body>
+</html>

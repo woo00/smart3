@@ -2,6 +2,9 @@
 .inblock {
 	display: inline-block;
 }
+.mxw100 {
+	max-width: 100px;
+}
 .mxw600 {
 	max-width: 600px;
 }
@@ -54,6 +57,9 @@
 }
 .ft18 {
 	font-size: 18pt;
+}
+.ft40 {
+	font-size: 40pt;
 }
 .bd {
 	font-weight: bold;

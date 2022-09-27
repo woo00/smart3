@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<div class="w3-content mxw650 w3-center" id="d1">
+		<h1 class="tan2 w3-card-4">문서 읽기 테스트</h1>
+		<p id="msg1"></p>
+		<p id="msg2"></p>
+		<p id="msg3"></p>
+		<div>
+			<div class="w150 w3-button tan w3-hover-brown" id="btn">click</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var obj = {
+		m1: function(){
+			return"Hello Lambo!!!";
+		},	
+		m2: function(a){
+			var result = a;
+			return result;
+		},	
+		m3: function(a,b){
+			var result = a + b;
+			return result;
+		}	
+	};
+	
+	document.getElementById('msg1').innerHTML = obj.m1();
+	document.getElementById('msg2').innerHTML = obj.m2('100');
+	document.getElementById('msg3').innerHTML = obj.m3('100', '200');
+	
+	//btn 태그 이벤트추가
+	document.getElementById('btn').onclick = function(){
+		var txt1 = document.getElementById('d1').innerHTML;
+		var txt2 = document.getElementById('d1').innerText;
+		
+		alert('innerHTML : \n' + txt1);
+		alert('innerText : \n' + txt2);
+	};
+</script>
+</body>
+</html>

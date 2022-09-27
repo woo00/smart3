@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+	function Car(name,color,speed){
+		this.name = name;
+		this.color = color;
+		this.speed = speed;
+		this.speedup = function(){
+			return this.speed + 10;
+		};
+		this.speeddown = function(){
+			return this.speed - 10;
+		};
+	}
+	/*
+		var jennie = {
+			name : 'tico',
+			color : 'orange',
+			speed : 80,
+			speedup : function(){
+				return this.speed + 10;
+			},
+			
+			speeddown : function(){
+				return this.speed - 10;
+			}
+	};
+	*/
+	
+	var jennie = new Car('tico','orange',80);
+	
+	alert(jennie.name + ' - ' + jennie.color + ' - ' + jennie.speed + '');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

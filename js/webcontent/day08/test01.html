@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script type="text/javascript">
+// 자바스크립트에서 객체를 만드는 방법
+
+// 1. 변수에 바로 객체를 정의하는 방법
+	var obj1 = {
+		name : 'jennei',
+		age : 27,
+		sing : function(s){
+			alert(s);
+		}
+	};
+	
+//	alert(obj1.name);
+// 2. Object의 생성자를 호출해서 사용하는 방법
+	var obj2 = new Object();
+	
+	// 필요한 속성 추가
+	obj2.name = '리사';
+	obj2.age = 28;
+	
+//	alert(obj2.name);
+	
+// 3. 필요한 객체의 생성자를 직접 정의하는 방법
+
+	function Obj3(name, age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	var obj3 = new Obj3('로제',27);
+	var obj4 = new Obj3('지수',28);
+	alert(obj4.name); 
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

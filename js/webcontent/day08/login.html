@@ -14,7 +14,7 @@
 <body>
 	<div class="w3-display-container" style="height: 100%;">
 	<div class="w3-display-middle mxw750">
-		<h1 class="w3-padding w3-pink w3-center w3-card-4 w3-round-large mgb20">Smart Login</h1>
+		<h1 class="w3-padding tan4 w3-center w3-card-4 w3-round-large mgb20">Smart Login</h1>
 		
 		
 		<form method="get" action="result.html" id="frm" name="frm" class="w3-col w3-card-4 mgb20 pdh30 w3-round-large">
@@ -40,9 +40,9 @@
 			</div>
 		</form>
 		<div class="w3-col w3-card-4 w3-round-large hidden ">
-			<div class="w3-col w3-third w3-green w3-hover-lime w3-button" id="hbtn">home</div>
-			<div class="w3-col w3-third w3-orange w3-hover-khaki w3-button" id="jbtn">reset</div>
-			<div class="w3-col w3-third w3-blue w3-hover-aqua w3-button" id="lbtn">join</div>
+			<div class="w3-col w3-third tan w3-hover-white w3-button" id="hbtn">home</div>
+			<div class="w3-col w3-third tan1 w3-hover-white w3-button" id="jbtn">reset</div>
+			<div class="w3-col w3-third tan2 w3-hover-white w3-button" id="lbtn">join</div>
 		</div>
 	</div>
 	</div>
@@ -59,6 +59,61 @@
 			// 더이상 내용을 실행시키면 안되기 때문에 함수실행을 종료시킨다.
 			return;
 		}
+		
+
+		// 정규표현식 검사
+		
+		// 정규객체 생성
+// 		var pat1 = new RegExp('jennie');
+		
+		//한글패턴검사
+// 		var pat1 = new RegExp('[가-힣]{2-10}');
+		// 참고 ]
+		//			알파벳 3글자이후 K가 와야하고 이후엔 숫자 2개이루어진 패턴
+		//			var pattern = '^[a-zA-Z]{3}K[0-9]{2}$';
+		/*
+			이메일형식 검사용 패턴 입력하세영
+				아이디는 	
+						1. 5 ~ 10글자 
+						2. 첫 글자는 알파벳 두번째 이후문자는 알파벳과 숫자로
+				@도메인(.com)			
+		*/
+		
+		// 1번.
+// 		var pattern = '^[a-zA-Z]{5,10}\@[a-z]{2,}\.(([a-z{3})|([a-z]{2}\.[a-z{2}]]))$'
+		
+		var pattern = '^[a-zA-Z][a-zA-Z0-9]{4,9}\@[a-z]{2,}[.](([a-z]{3})|([a-z]{2}[.][a-z]{2}))$';
+		
+		var pat1 = new RegExp(pattern); 
+			
+		// 검사
+		var result1 = pat1.test(sid); // 테스트의 결과를 반환해주면 변수에 기억시킨다
+		if(!result1){
+			document.frm.id.value = '';
+			document.frm.id.focus();
+			return;
+		}	
+		var spw = document.frm.pw.value;
+		if(!spw){
+			document.frm.pw.focus();
+			return;
+		}
+		
+// 		var pwPat = /^12345$/;
+		// 숫자 5글자로 이루어진 비밀번호 검사
+// 		var pwPat = /^[a-zA-Z]+[0-9]{5}$/;
+		var pwPat = /^12345$/;
+		
+		//표현식 검사하고 처리
+		if(!pwPat.test(spw)){
+			document.frm.pw.value = '';
+			document.frm.pw.focus();
+			return;		
+		}
+
+		// 폼태그 전송
+		document.frm.submit();
+		
 		if(sid.indexOf('@') == -1){
 			//메일형식이 아닌경우
 			//입력데이터 지우고 
@@ -73,6 +128,7 @@
 		}
 		// 폼태그 전송
 		document.frm.submit();
+		
 	}
 </script>
 </body>

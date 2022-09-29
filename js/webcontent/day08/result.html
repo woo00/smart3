@@ -41,7 +41,7 @@
 // 	alert(spw);
 	document.getElementById('pw').innerHTML = spw;
 	
-	var mail = data.slice(data.indexOf('j	'), data.indexOf('&'));
+	var mail = data.substring(data.indexOf('=')+1, data.indexOf('&'));
 // 	alert(mail);
 	var arr = mail.split('@');
 	

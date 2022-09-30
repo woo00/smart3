@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<div class="w3-content mxw650 w3-center">
+		<h1 class="w3-padding tan5 w3-card-4">현재 시각</h1>
+		<div class="w3-col m3 w3-margin-top">
+			<h3 id="txt" class="tan3 w3-round-large w3-card-4"></h3>
+		</div>
+	</div>
+<script type="text/javascript">
+	function setNowTime(){
+		var obj = new Date();
+		
+		document.getElementById('txt').innerHTML = obj.getHours() + ':' + obj.getMinutes() + ':' + obj.getSeconds();
+	}
+	setInterval(setNowTime, 1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<div class="w3-content mxw600 w3-center">
+		<h1 class="tan5 w3-padding w3-card-4">Select Tag</h1>
+		<form method="get" action="" name="frm" id="frm"
+				class="w3-col w3-margin-top">
+			<select name="member" class="w3-input w3-border">
+				<option selected>### 멤버를 선택하세요. ###</option>
+				<option value="jennie">제니</option>
+				<option value="lisa">리사</option>
+				<option value="rose">로제</option>
+				<option value="jisoo">지수</option>
+			</select>
+		</form>
+		<div class="w3-col w3-margin-top w3-padding w3-card-4" id="d1" style="display : none;">
+			<h1 class="w3-center" id="selMemb"></h1>
+		</div>
+	</div>
+<script type="text/javascript">
+	// change 이벤트 추가
+	document.frm.member.onchange = function(){
+		var memb = this.value;
+		var selno = document.frm.member.selectedIndex;
+		alert('idx : ' + selno);
+		document.getElementById('d1').style.display = 'block';
+		document.getElementById('selMemb').innerHTML = memb;
+	};
+</script>
+</body>
+</html>

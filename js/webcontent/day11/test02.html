@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<div class="w3-content mxw700 w3-center">
+		<h1 class="w3-padding tan">Timer Function</h1>
+		<div class="w3-col w3-margin-top">
+			<div class="w3-button tan3 w3-border" id="btn1">setInterval</div>
+			<div class="w3-button tan4 w3-border"" id="btn2">stopInterval</div>
+			<div class="w3-button tan5 w3-border"" id="btn3">setTimeout</div>
+			<div class="w3-button tan6 w3-border"" id="btn4">clearTimeout</div>
+		</div>
+		<div class="w3-col w3-margin-top" id="d1"></div>
+	</div>
+<script type="text/javascript">
+	function func1(){
+		document.getElementById('d1').innerHTML += '<h3 class="inblock avtimg w3-brown glbl w3-card-4 w3-center">h3</h3>'
+	}
+	function func2(){
+		document.getElementById('d1').innerHTML += '<h3 class="w3-black w3-card-4">d</h3>'
+	}
+	
+// 	alert('--- start! ---');
+	
+// 	window.setInterval(func1, 1000);
+	
+// 	window.setTimeout(func1, 1000);
+	var evt1;
+	document.getElementById('btn1').onclick = function(){
+		evt1 = setInterval(func1, 1000);
+	};
+	document.getElementById('btn2').onclick = function(){
+		// setInterval() 함수 실행해제
+		clearInterval(evt1);
+	};
+	var evt2;
+	document.getElementById('btn3').onclick = function(){
+		evt2 = setTimeout(func2, 1000);
+	};
+	document.getElementById('btn4').onclick = function(){
+		evt2 = clearTimeout(evt2);
+	};
+	
+</script>
+</body>
+</html>

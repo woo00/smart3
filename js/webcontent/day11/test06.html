@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+</head>
+<body>
+	<div class="w3-content mxw700 w3-center" id="content"></div>
+	
+
+<script type="text/javascript">
+	var el = document.getElementById('content');
+		
+	
+	var tag1 = document. createElement('h1');
+	tag1.setAttribute('class','w3-padding w3-blue w3-card-4');
+	tag1.innerHTML = '만들어서 추가한 태그...';
+	tag1.onclick = function(){
+		this.setAttribute('class', 'w3-padding w3-pink w3-card-4')
+		
+	};
+	
+	el.appendChild(tag1);
+</script>
+</body>
+</html>

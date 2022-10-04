@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+</head>
+<body>
+	<div class="w3-content mxw700 w3-center" id="content">
+		<h1 class="w3-padding tan w3-card-4">dynamic tag added</h1>
+		<div class="w3-col w3-margin-top">
+			<div class="w3-button tan2">btn</div>
+			<div class="w3-button tan3">click</div>
+			<div class="w3-button tan3">click</div>
+			<div class="w3-button tan3">click</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	document.getElementById('content').children[1].children[0].addEventListener('click', function(){
+		document.getElementById('content').children[1].innerHTML += '<div class="w3-button tan3">click</div>';
+	});
+	
+	document.getElementById('content').childNodes[0].nodeValue = '수정한 내용...';
+</script>
+</body>
+</html>
